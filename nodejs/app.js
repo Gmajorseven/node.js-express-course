@@ -3,7 +3,7 @@ const chalk = require('chalk');
 const debug = require('debug')('app');
 const morgan = require('morgan');
 const app = express();
-const port = 3000;
+const port = process.env.port;
 const path = require('path');
 
 app.use(morgan('combined'));
