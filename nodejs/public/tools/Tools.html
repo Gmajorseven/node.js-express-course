@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tools</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #212121;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            background-color: #fff;
+            border-bottom: 2px solid #ccc;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #212121;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ccc;
+        }
+
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        article {
+            width: 30%;
+            background-color: #f5f5f5;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        article h3 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        article p {
+            margin-bottom: 0;
+        }
+
+        footer {
+            background-color: #212121;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #212121;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        input {
+            border: none;
+            border-bottom: 1px solid rgb(10, 10, 10);
+            background-color: transparent;
+            padding: 5px;
+            font-size: 16px;
+        }
+    </style>
+    <link rel = "icon" href =
+    "../img/teddy-bear-vector-png.png"
+        type = "image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Money Management</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="https://www.set.or.th/th/home">Stocks</a></li>
+            <li><a href="https://www.cmegroup.com/">Options</a></li>
+            <li><a href="https://www.exness.com/">Forex</a></li>
+            <li><a href="https://www.binance.com/">Crypto</a></li>
+            <li><a href="/tools/Tools.html">Tools</a></li>
+            <li><a href="../blogs/blogs.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <center>
+            <h2>Calculator</h2>
+            <input id="cap" type="text">
+            <label>Capitals</label>
+            <br> <br>
+            <input id="risk" type="text">
+            <label>%Risk</label>
+            <br> <br>
+            <input id="pr" type="text">
+            <label>Price</label>
+            <br> <br>
+            <input id="sl" type="text">
+            <label>Stop Loss</label>
+            <br> <br>
+            <button class="button" onclick="act()">Calculate</button>
+            <br> <br>
+            <h3 id="result0"></h3>
+            <h3 id="result1"></h3>
+            <h3 id="result2"></h3>
+            <br> <br> <br> <br>
+        </center>
+    </main>
+    <script src="app.js"></script>
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Teddy<span>Trader</span></h3>
+
+            <p class="footer-links">
+                <a href="../index.html">Home</a>
+                ·
+                <a href="../blogs/blogs.html">Blog</a>
+                ·
+                <a href="#">Pricing</a>
+                ·
+                <a href="#">About</a>
+                ·
+                <a href="#">Faq</a>
+                ·
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">teddytrader &copy; 2023</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p>Sisaket, Thailand</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+66 090 2974993</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">guide.band8@gmail.com.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the Website</span>
+                Trading, Investing &amp; Life Long Learner.
+            </p>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
