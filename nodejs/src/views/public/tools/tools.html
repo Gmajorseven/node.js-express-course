@@ -2,16 +2,16 @@
 <html>
 
 <head>
-    <title>Blogs</title>
+    <title>Tools</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style src="../styles.css"></style>
+    <link rel="stylesheet" href="../styles.css" type="text/css">
     <link rel="icon" href="../img/teddy-bear-vector-png.png" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <h1>Blogs</h1>
+        <h1>Money Management</h1>
     </header>
     <nav>
         <ul>
@@ -20,14 +20,34 @@
             <li><a href="https://www.cmegroup.com/">Options</a></li>
             <li><a href="https://www.exness.com/">Forex</a></li>
             <li><a href="https://www.binance.com/">Crypto</a></li>
-            <li><a href="../tools/Tools.html">Tools</a></li>
-            <li><a href="blogs.html">Blog</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="../blogs/blogs.html">Blogs</a></li>
+            <li><a href="../../shop">Shop</a></li>
         </ul>
     </nav>
 
     <main>
-
+            <h2>Calculator</h2>
+            <input id="cap" type="text">
+            <label>Capitals</label>
+            <br> <br>
+            <input id="risk" type="text">
+            <label>%Risk</label>
+            <br> <br>
+            <input id="pr" type="text">
+            <label>Price</label>
+            <br> <br>
+            <input id="sl" type="text">
+            <label>Stop Loss</label>
+            <br> <br>
+            <button class="button" onclick="act()">Calculate</button>
+            <br> <br>
+            <h3 id="result0"></h3>
+            <h3 id="result1"></h3>
+            <h3 id="result2"></h3>
+            <br> <br> <br> <br>
     </main>
+    <script src="app.js"></script>
     <footer class="footer-distributed">
 
         <div class="footer-left">
@@ -37,7 +57,7 @@
             <p class="footer-links">
                 <a href="../index.html">Home</a>
                 ·
-                <a href="blogs.html">Blog</a>
+                <a href="../blogs/blogs.html">Blog</a>
                 ·
                 <a href="#">Pricing</a>
                 ·
@@ -65,7 +85,7 @@
 
             <div>
                 <i class="fa fa-envelope"></i>
-                <p><a href="mailto:support@company.com">guide.band8@gmail.com.com</a></p>
+                <p><a href="mailto:support@company.com">guide.band8@gmail.com</a></p>
             </div>
 
         </div>
