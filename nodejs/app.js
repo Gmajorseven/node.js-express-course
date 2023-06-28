@@ -15,14 +15,15 @@ app.use(express.static(path.join(__dirname, "/src/views/public")));
 app.set("views", "./src/views");
 app.set("view engine", "ejs");
 
-detailRouter.route("/detail").get((req, res) => {
-    res.render('detail');
-});
-
-app.use("/shop/", detailRouter)
-
 app.get("/shop", (req, res) => {
-    res.render('shop', { username: 'Teddy' });
+    res.render('shop', { 
+        product : [
+        {name: 'Psychology of Money', writer: 'Morgan Housel', price: 275.5, imgsrc: '../img/img_psychology.jpg'},
+        {name: 'The Bitcion Standard', writer: 'Saifedean Ammous', price: 310.5, imgsrc: '../img/img_the.jpg'},
+        {name: 'Leyered Money', writer: 'Nik Bhatia', price: 256.5, imgsrc: '../img/img_leyered.jpg'},
+        {name: 'Inventing Bitcoin', writer: 'Yan Pritzker', price: 202.5, imgsrc: '../img/img_inventing.jpg'}
+        ]
+    });
 });
 
 app.listen(port, () => {

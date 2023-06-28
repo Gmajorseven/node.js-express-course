@@ -27,7 +27,9 @@
     </nav>
 
     <main>
-            <h2>Calculator</h2>
+        <br>
+        <div class="tool" style="position: relative; margin: 0 auto">
+            <h2 style="text-align: center;">Calculator</h2>
             <input id="cap" type="text">
             <label>Capitals</label>
             <br> <br>
@@ -39,13 +41,19 @@
             <br> <br>
             <input id="sl" type="text">
             <label>Stop Loss</label>
-            <br> <br>
-            <button class="button" onclick="act()">Calculate</button>
-            <br> <br>
+
+            <br><br><br>
+            <center>
+                <button class="button" onclick="act()">Calculate</button>
+            </center>
+        </div>
+        <br> <br>
+        <center>
             <h3 id="result0"></h3>
             <h3 id="result1"></h3>
             <h3 id="result2"></h3>
-            <br> <br> <br> <br>
+        </center>
+        <br> <br> <br> <br>
     </main>
     <script src="app.js"></script>
     <footer class="footer-distributed">

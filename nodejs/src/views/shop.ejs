@@ -5,8 +5,8 @@
     <title>Shop</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../styles.css" type="text/css">
-    <link rel="icon" href="../../teddy-bear-vector-png.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles.css" type="text/css">
+    <link rel="icon" href="../img/teddy-bear-vector-png.png" type="image/x-icon">
 </head>
 
 <body>
@@ -27,9 +27,22 @@
     </nav>
     <main>
         <h2>Shop</h2>
-        <section>
-            <h3>Productname</h3>
-        </section>
+        <% product.map((product)=> { %>
+                <div class="product">
+                    <header>
+                        <h3>
+                            <%=product.name%>
+                        </h3>
+                        <img src=<%=product.imgsrc%> alt="product">
+                    </header>
+                    <h4>
+                        by <%=product.writer%>
+                    </h4>
+                    <p>
+                        <%=product.price%> bath
+                    </p>
+                </div>
+            <%})%>
     </main>
     <footer class="footer-distributed">
 
