@@ -28,20 +28,20 @@
     <main>
         <h2>Shop</h2>
         <% product.map((product)=> { %>
-                <div class="product">
-                    <header>
-                        <h3>
+            <div class="product">
+                <header>
+                    <h3><a href=<%=product.src%> >
                             <%=product.name%>
-                        </h3>
-                        <img src=<%=product.imgsrc%> alt="product">
-                    </header>
-                    <h4>
-                        by <%=product.writer%>
-                    </h4>
-                    <p>
-                        <%=product.price%> bath
-                    </p>
-                </div>
+                        </a></h3>
+                    <img src=<%=product.imgsrc%> alt="product">
+                </header>
+                <h4>
+                    by <%=product.writer%>
+                </h4>
+                <p>
+                    <%=product.price%> bath
+                </p>
+            </div>
             <%})%>
     </main>
     <footer class="footer-distributed">

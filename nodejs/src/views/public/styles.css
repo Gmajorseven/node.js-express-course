@@ -145,3 +145,8 @@ img {
     width: 220px;
     height: 300px;
 }
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
