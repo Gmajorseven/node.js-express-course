@@ -3,7 +3,7 @@ const chalk = require('chalk');
 const debug = require('debug')('app');
 const morgan = require('morgan');
 const app = express();
-const detailRouter = express.Router();
+//const detailRouter = express.Router(); add when create owner shop
 
 const port = process.env.port || 4000;
 const path = require('path');
