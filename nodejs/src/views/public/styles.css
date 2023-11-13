@@ -58,11 +58,6 @@ h2 {
     font-size: 24px;
 }
 
-p {
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
 section {
     display: flex;
     flex-wrap: wrap;
@@ -136,9 +131,14 @@ div.tool {
     width: 300px;
     border: 15px solid black;
     padding: 45px;
-    margin: 15px;
     border-radius: 5px;
     content: normal;
+    position: relative;
+    margin: 0 auto;
+}
+
+div.tool h2 {
+    text-align: center;
 }
 
 img {
